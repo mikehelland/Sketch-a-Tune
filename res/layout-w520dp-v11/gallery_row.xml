@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <com.monadpad.sketchatune2.MiniMonadView
+            android:id="@+id/mini_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    <TextView android:id="@+id/gallery_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/mini_view"
+
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:paddingLeft="6dip"
+              android:minHeight="?android:attr/listPreferredItemHeight"
+            />
+
+
+    <TextView android:id="@+id/gallery_artist"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/gallery_name"
+              android:layout_alignLeft="@id/gallery_name"
+              android:paddingLeft="4dip"
+
+            />
+
+    <RatingBar android:id="@+id/gallery_ratingbar"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:numStars="5"
+               android:layout_alignBottom="@id/gallery_artist"
+               android:layout_alignParentRight="true"
+               android:isIndicator="true"
+
+            />
+
+
+    <TextView android:id="@+id/gallery_id"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="gone"
+            />
+
+</RelativeLayout>

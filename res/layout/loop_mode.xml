@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+            android:padding="4dip"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <RadioButton
+            android:id="@+id/chkLoopSeparate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loop Separate"
+            android:checked="true"
+            />
+
+    <TextView android:layout_height="wrap_content" android:id="@+id/cap_loop_separate"
+              android:text="@string/loop_separate"
+              android:layout_width="wrap_content"
+              android:layout_below="@id/chkLoopSeparate"
+            />
+
+    <TextView android:layout_height="20dip"
+              android:id="@+id/separator"
+              android:layout_width="fill_parent"
+              android:layout_below="@id/cap_loop_separate"
+            />
+
+    <RadioButton
+            android:id="@+id/chkLoopTogether"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loop Together"
+            android:layout_below="@id/separator"
+            />
+    <TextView android:layout_height="wrap_content" android:id="@+id/cap_loop_together"
+              android:text="@string/loop_together"
+              android:layout_width="wrap_content"
+              android:layout_below="@id/chkLoopTogether"
+            />
+</RadioGroup>

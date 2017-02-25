@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:layout_height="wrap_content" android:id="@+id/capSong" android:text="Song Name"
+              android:layout_width="wrap_content"></TextView>
+    <EditText android:layout_height="wrap_content" android:id="@+id/txtOjName" android:text=""
+              android:layout_width="fill_parent"
+              android:layout_below="@id/capSong"
+              android:singleLine="true"></EditText>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:drawable/bottom_bar"
+            android:paddingLeft="4.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingBottom="1.0dip"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOjName">
+
+        <Button
+                android:id="@+id/okButton"
+                android:layout_width="0.0dip" android:layout_height="fill_parent"
+                android:text="OK"
+                android:layout_weight="1.0" />
+
+        <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0.0dip" android:layout_height="fill_parent"
+                android:text="Cancel"
+                android:layout_weight="1.0" />
+
+    </LinearLayout>
+</RelativeLayout>

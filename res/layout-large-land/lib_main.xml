@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:id="@+id/top_layout"
+        android:padding="3dip"
+        >
+
+    <TextView
+            android:gravity="center"
+            android:layout_width="131dip"
+            android:layout_height="wrap_content"
+            android:text="@string/change_settings"
+            android:id="@+id/change_settings_caption"
+            android:textColor="@android:color/black"
+            />
+
+
+
+    <RelativeLayout android:layout_below="@id/change_settings_caption"
+                    android:layout_width="131dip"
+                    android:layout_height="130dip"
+                    android:background="@drawable/control_button"
+                    android:padding="6dip"
+                    android:id="@+id/settings_layout"
+            >
+
+        <TextView android:layout_height="wrap_content" android:id="@+id/scale_value" android:text="Major"
+                  android:layout_width="wrap_content"
+                  android:textAppearance="@android:style/TextAppearance.Large"
+                  android:layout_alignParentRight="true"
+                ></TextView>
+
+        <TextView android:layout_height="wrap_content" android:id="@+id/scale_cap" android:text="@string/pref_quantizer"
+                  android:layout_width="wrap_content"
+                  android:textAppearance="@android:style/TextAppearance.Small"
+                  android:layout_alignBaseline="@id/scale_value"></TextView>
+
+
+        <TextView android:layout_height="wrap_content" android:id="@+id/bottom_note_value" android:text="C 3"
+                  android:layout_width="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@id/scale_value"
+                  android:textAppearance="@android:style/TextAppearance.Large"
+                >
+        </TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/bottom_note_cap" android:text="@string/pref_base"
+                  android:layout_width="wrap_content"
+                  android:layout_alignBaseline="@id/bottom_note_value">
+        </TextView>
+
+        <TextView android:layout_height="wrap_content" android:id="@+id/octaves_value" android:text="4"
+                  android:layout_width="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@id/bottom_note_value"
+                  android:textAppearance="@android:style/TextAppearance.Large">
+        </TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/octaves_cap" android:text="@string/pref_octaves"
+                  android:layout_width="wrap_content"
+                  android:layout_alignBaseline="@id/octaves_value"></TextView>
+
+        <TextView android:layout_height="wrap_content" android:id="@+id/autoremove_value" android:text="On"
+                  android:layout_width="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_below="@id/octaves_value"
+                  android:textAppearance="@android:style/TextAppearance.Large">
+        </TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/autoremove_cap" android:text="@string/pref_autoremove"
+                  android:layout_width="wrap_content"
+                  android:layout_alignBaseline="@id/autoremove_value"></TextView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="131dip"
+        android:layout_height="wrap_content"
+        android:text="@string/select_color"
+        android:id="@+id/select_color_caption"
+        android:layout_below="@id/settings_layout"
+        android:textColor="@android:color/black"
+            />
+
+    <Button android:textColor="@android:color/black"
+            android:text="@string/color_sound"
+            android:layout_height="45dip"
+            android:layout_width="131dip"
+            android:id="@+id/instrument"
+            android:layout_below="@id/select_color_caption"
+            android:background="@drawable/color_button"
+            />
+
+
+    <Button android:text="@string/mix"
+            android:layout_height="wrap_content"
+            android:layout_width="131dip"
+            android:id="@+id/levels"
+            android:layout_below="@id/instrument"
+
+            />
+
+    <Button android:text="@string/part_caption"
+            android:layout_height="wrap_content"
+            android:layout_width="131dip"
+            android:id="@+id/abc"
+            android:layout_below="@id/levels"
+            />
+
+
+    <Button android:text="@string/clear"
+            android:layout_width="131dip"
+
+            android:id="@+id/clearButton" android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            ></Button>
+
+    <Button android:text="@string/undo"
+            android:layout_width="131dip"
+
+            android:id="@+id/undoButton" android:layout_height="wrap_content"
+            android:layout_above="@id/clearButton"
+
+            ></Button>
+
+
+    <Button android:text="@string/done"
+            android:layout_width="131dip"
+                android:layout_alignParentTop="true"
+                android:id="@+id/finishButton" android:layout_height="fill_parent"
+                android:visibility="invisible"
+
+
+            ></Button>
+
+
+    <Button android:text="@string/clear_all"
+            android:layout_width="80dip"
+            android:id="@+id/clearAll" android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"></Button>
+
+
+    <ImageButton android:src="@drawable/drum48"
+                 android:layout_width="80dip"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:visibility="gone"
+                 android:layout_alignParentRight="true"
+                 android:id="@+id/drummachine"
+                 android:layout_marginLeft="4dip"
+            />
+
+
+    <com.monadpad.sketchatune2.MonadView
+            android:id="@+id/mpad"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/finishButton"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/drummachine"
+            android:layout_marginLeft="3dip"
+            />
+
+
+
+    <include layout="@layout/ratings"/>
+
+</RelativeLayout>

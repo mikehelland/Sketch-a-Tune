@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+    <item
+        android:drawable="@drawable/color_button" />
+    <item
+        android:drawable="@drawable/control"
+        android:top="5dip"
+        android:bottom="4dip"
+        android:left="5dip"
+        android:right="4dip"
+            />
+
+</layer-list>

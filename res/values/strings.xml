@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android:resources xmlns:android="http://schemas.android.com/apk/res/com.monadpad.sketchatune2">
+    <string name="app_name">Sketch a Tune</string>
+
+    <string name="app_desc">Draw pictures, make sounds.</string>
+
+    <string name="share_menu">Save and Share</string>
+    <string name="tutorial_menu">Tutorial</string>
+
+    <string name="pref_lockscreen">Lock Screen</string>
+    <string name="pref_showtime">Show Time</string>
+
+    <string name="pref_colordesc">Describe Colors</string>
+
+    <string name="pref_quantizer">Scale</string>
+    <string name="pref_octaves">Octaves</string>
+    <string name="pref_autoremove">Auto remove</string>
+
+    <string name="pref_showbeats">Show Beat Lines</string>
+
+    <string name="pref_base">Bottom Note</string>
+
+    <string name="preferences_caption">Settings</string>
+    <string name="sdcard_caption">SD Card</string>
+    <string name="cmc_caption">Cloud Music Company</string>
+    <string name="hidden_caption">(Hidden)</string>
+
+    <string name="gallery_caption">Load</string>
+
+    <string name="cloudmusiccompany">Cloud Music Company</string>
+    <string name="featured_caption">Featured Grooves</string>
+    <string name="three_dee_menu">3-D Beta</string>
+
+    <string name="url_main2">http://10.0.2.2:8888/</string>
+    <string name="url_main">http://cloudmusiccompany.appspot.com/</string>
+
+
+    <string name="url_share">share.htm?u=watch.jsp%3Fid%3D</string>
+
+    <string name="url_gallery">gallery?page=</string>
+    <string name="url_grooves">grooves</string>
+    <string name="url_grooveupdate">grooveupdate</string>
+    <string name="get_more">Get More Grooves</string>
+
+    <string name="no_saved_grooves">You haven\'t saved any Grooves!</string>
+
+    <string name="loop_together">Similar to the 2-D MonadPad, the first draw sets the loop\'s length.
+        All overdubs start and stop according to the master loop. \n\n
+        This mode is useful for doing sophisticated choreography between different sounds.</string>
+
+    <string name="loop_separate">Each draw in this mode loops at its own individual pace.
+        \n\n
+        This mode is useful for investigating polyrhythms and chaos.</string>
+    <string name="try_both_loop_modes">Try both Loop Modes!</string>
+
+    <string name="background_menu">Background</string>
+    <string name="tutorial">Tutorial</string>
+
+    <string name="gallery_menu">Gallery</string>
+    <string name="synth_preferences_menu">Settings</string>
+    <string name="select_color">Select:</string>
+    <string name="change_settings">Settings:</string>
+    <string name="open_menu">Open</string>
+    <string name="pref_autotime">AutoTime</string>
+
+    <string name="part_caption">Parts</string>
+
+    <string name="record_mode">RECORDING MODE</string>
+    <string name="record_channels">Supports 2 channels</string>
+
+    <string name="pref_frets">Show Frets</string>
+    <string name="pref_startdrummachine">Drum Machine Mode</string>
+    <string name="pref_autopan">Auto Pan L-R</string>
+    <string name="rate_this_groove">Rate this Groove</string>
+    <string name="save_dialog_title">You can name your groove</string>
+    <string name="saved_to_sd_card">Saved to
+
+    </string>
+    <string name="not_saved_to_sd_card">Your file was not saved</string>
+    <string name="something_went_wrong_connecting_to_cmc">Something went wrong connecting to
+        Cloud Music Company
+    </string>
+    <string name="share_groove_title">Share your groove</string>
+    <string name="save_progress">Saving…</string>
+    <string name="nothing_to_share">Draw something then Share it!</string>
+    <string name="loading_please_wait">Loading. Please wait…</string>
+    <string name="gallery_list_title">Groove Gallery</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="saved_count_on_sd">Click here to browse your saved grooves</string>
+    <string name="no_more_to_download">That\'s everything</string>
+    <string name="gallery_is_empty">The gallery is empty</string>
+    <string name="show_public">Show in Public Gallery</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="song_name">Song Name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="couldnt_find_make_dir">Couldn\'t find or make</string>
+    <string name="failed_to_load_string">Failed to load data \n\n You may need to update or upgrade</string>
+    <string name="loop_is_short">Loop is very short \n\nPress Clear and Try again \n\n Take your time!</string>
+    <string name="pref_user_lower_sample_rate">Use Lower Sample Rate</string>
+    <string name="color_sound">Color/Sound</string>
+    <string name="mix">mix</string>
+    <string name="clear">Clear</string>
+    <string name="undo">Undo</string>
+    <string name="done">Done</string>
+    <string name="color">Color</string>
+    <string name="scale">Scale</string>
+    <string name="bottom_note">Bottom Note</string>
+    <string name="volume">volume</string>
+    <string name="pan"><![CDATA[<left - PAN - right>]]></string>
+    <string name="start_drawing">Start DRAWING!</string>
+    <string name="press_for">Press For</string>
+    <string name="is">is</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <string name="pref_movelinesinautotime">Move Lines in AutoTime</string>
+
+    <string name="keep_rolling">Hold to Keep Rolling</string>
+
+
+
+
+
+    <!-- untranslated -->
+
+    <string name="clear_all">All Stop</string>
+    <string name="omgdrums_level">Get the Beat!</string>
+    <string name="omgdrums_desc">Pump up your jams with OMG Drums, a free, easy to use Open Source drum machine
+        from the maker of Sketch a Tune
+    </string>
+    <string name="install_omgdrums">Get OMG Drums for FREE!</string>
+
+
+</android:resources>

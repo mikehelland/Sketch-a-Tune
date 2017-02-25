@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/mainlayout"
+              android:orientation="horizontal"
+        >
+
+    <include android:id="@+id/mpf" layout="@layout/lib_main" />
+
+    <fragment android:name="com.monadpad.sketchatune2.SettingsFragment"
+              android:layout_height="fill_parent"
+              android:layout_width="200dip"
+              android:id="@+id/settings_fragment"
+            />
+
+
+
+
+    <!--    <fragment android:name="com.monadpad.ThreeDeeFragment"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+
+                android:layout_toLeftOf="@id/linearlayout1"
+
+                android:id="@+id/threedee_fragment"
+
+              />
+    -->
+
+</LinearLayout>
+

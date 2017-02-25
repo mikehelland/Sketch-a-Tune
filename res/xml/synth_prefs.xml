@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+            android:title="@string/pref_startdrummachine"
+            android:key="drummachine_mode"
+            android:defaultValue="true"/>
+
+    <CheckBoxPreference
+            android:title="@string/pref_autotime"
+            android:key="autotime"
+            android:defaultValue="true"
+            android:id="@+id/autotime"
+        />
+    <CheckBoxPreference
+            android:title="@string/pref_movelinesinautotime"
+            android:key="movelines"
+            android:defaultValue="false"/>
+    <ListPreference
+          android:title="@string/pref_autoremove"
+          android:key="autoremove"
+          android:defaultValue="10"
+          android:entries="@array/autoremove"
+          android:entryValues="@array/autoremove"/>
+
+  <ListPreference
+		android:title="@string/pref_quantizer"
+		android:key="quantizer"
+        android:defaultValue="0,2,4,5,7,9,11"
+		android:entries="@array/quantizer_entries"
+		android:entryValues="@array/quantizer_values"/>
+		
+  <ListPreference
+		android:title="@string/pref_octaves"
+		android:key="octaves"
+		android:defaultValue="4"
+		android:entries="@array/octaves_both"
+		android:entryValues="@array/octaves_both"/>
+
+
+    <ListPreference
+          android:title="@string/pref_base"
+          android:key="base"
+          android:defaultValue="36"
+          android:entries="@array/base_captions"
+          android:entryValues="@array/base"/>
+
+    <CheckBoxPreference
+            android:title="@string/pref_showtime"
+            android:key="showtime"
+            android:defaultValue="true"/>
+
+    <CheckBoxPreference
+            android:title="@string/pref_showbeats"
+            android:key="showbeats"
+            android:defaultValue="true"/>
+
+<!--    <CheckBoxPreference
+            android:title="@string/pref_lockscreen"
+            android:summary="During playback"
+            android:key="lockscreen"
+            android:defaultValue="false"/>
+    -->
+    <CheckBoxPreference
+            android:title="@string/pref_colordesc"
+            android:key="showColorDesc"
+            android:defaultValue="true"/>
+
+    <CheckBoxPreference
+            android:title="@string/pref_frets"
+            android:key="showfrets"
+            android:defaultValue="true"/>
+
+    <CheckBoxPreference
+            android:title="@string/pref_autopan"
+            android:key="autopan"
+            android:defaultValue="false"/>
+
+    <CheckBoxPreference
+            android:title="@string/pref_user_lower_sample_rate"
+            android:key="useLowerSampleRate"
+            android:defaultValue="false"/>
+
+    <!--
+    <CheckBoxPreference
+            android:title="TestMode2"
+            android:key="testmode2"
+            android:defaultValue="false"/>
+
+
+      <CheckBoxPreference
+            android:title="@string/pref_delay"
+            android:key="delay"
+            android:defaultValue="true"/>
+
+      <CheckBoxPreference
+            android:title="@string/pref_flange"
+            android:key="flange"
+            android:defaultValue="false"/>
+
+      <CheckBoxPreference
+            android:title="@string/pref_soft_envelope"
+            android:key="softEnvelope"
+            android:defaultValue="true"/>
+
+      <CheckBoxPreference
+            android:title="@string/pref_soft_timbre"
+            android:key="softTimbre"
+            android:defaultValue="true"/>
+
+      <CheckBoxPreference
+              android:summaryOn="@string/pref_timebytouch_on"
+              android:summaryOff="@string/pref_timebytouch_off"
+            android:title="@string/pref_timebytouch"
+            android:key="timeByTouch"
+            android:defaultValue="false"/>
+    -->
+
+  
+</PreferenceScreen>

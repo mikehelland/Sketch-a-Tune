@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/open_menu"
+          android:title="@string/open_menu"
+          android:icon="@drawable/ic_menu_archive"
+          android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/share_menu"
+          android:title="@string/share_menu"
+          android:icon="@android:drawable/ic_menu_share"
+          android:showAsAction="ifRoom|withText"/>
+
+<!--    <item android:id="@+id/three_dee_menu"
+          android:title="@string/three_dee_menu"
+          android:icon="@android:drawable/ic_menu_directions"
+          android:showAsAction="ifRoom|withText"/>
+    -->
+
+</menu>
